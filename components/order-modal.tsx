@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { useMutation } from "@tanstack/react-query"
 import { X, Check } from "lucide-react"
@@ -10,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
-import { apiRequest } from "@/lib/queryClient"
+import { apiRequest } from "@/lib/api-request" // Changed from queryClient to apiRequest
 import type { CartItem, OrderFormData } from "@/lib/types"
 
 interface OrderModalProps {
